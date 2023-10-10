@@ -9202,6 +9202,1519 @@
                 </div>
             </div><!--圖片題08--><!--生理恆定02-->
 
+            <div class="question"><!--圖片題09--><!--凝血反應-->
+                <div class="question-content">
+                    <img id="pic_09_imgsrc" src="https://raw.githubusercontent.com/Hanck1215/Physiology/main/clotting_response_que.png">
+                    <style>
+                        #pic_09_imgsrc {
+                            width: 600px;
+                        }
+                        .pic-questions-clotting {
+                            display: block;
+                            margin-top: 6%;
+                            margin-bottom: 50px;
+                            width: 1200px;
+                        }
+                        .pic-questions-clotting button {
+                            font-size: 1rem;
+                            color: rgb(72, 57, 46);
+                            border: 2px rgba(68, 51, 34, 0.75) solid;
+                            border-radius: 20px;
+                            padding: 3px 12px;
+                            background-color: rgb(255, 246, 218);
+                            margin-top: 12px;
+                        }
+                        .pic-questions-clotting button:hover {
+                            background-color: rgb(216, 206, 177);
+                        }
+                        .pic-questions-clotting button:active {
+                            background-color: rgb(237, 226, 194);
+                        }
+                        .pic-questions-clotting input[type="text"] {
+                            width: 1000px;
+                        }
+                    </style>
+                    <div>
+                        <button class="pic-ans-btn" id="pic-09-ans-btn">看答案</button>
+                    </div>
+                    <script>
+                        let pic_09_imgsrc_q = true;
+                        let pic_09_ans_btn = document.getElementById('pic-09-ans-btn');
+                        pic_09_ans_btn.addEventListener('click', e=>{
+                            let pic_09_imgsrc = document.getElementById('pic_09_imgsrc');
+                            console.log(pic_09_imgsrc.src);
+                            if(pic_09_imgsrc_q) {
+                                pic_09_ans_btn.textContent = '隱藏答案';
+                                pic_09_imgsrc_q = !pic_09_imgsrc_q;
+                                pic_09_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/clotting_response_ans.png';
+                            }else if(!pic_09_imgsrc_q) {
+                                pic_09_ans_btn.textContent = '看答案';
+                                pic_09_imgsrc_q = !pic_09_imgsrc_q;
+                                pic_09_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/clotting_response_que.png';
+                            }
+                        });
+                    </script>
+    
+                    <div class="pic-questions-wrapper">
+                        <div class="pic-questions-clotting">
+                            <div><!--1.step_01-->
+                                <style>
+                                    #yes-pic-09-step_01 { display: none; }
+                                    #no-pic-09-step_01 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-step_01">✔ </label>
+                                <label class="no" id="no-pic-09-step_01">✖ </label>
+                                <label>1 : </label>
+                                <input type="text" id="pic-09-step_01">
+                                <button id="clear-pic-09-step_01">清除</button>
+                                <script>
+                                    let input_pic_09_step_01 = document.getElementById('pic-09-step_01');
+                                    let yes_pic_09_step_01 = document.getElementById('yes-pic-09-step_01');
+                                    let no_pic_09_step_01 = document.getElementById('no-pic-09-step_01');
+                                    let clear_pic_09_step_01 = document.getElementById('clear-pic-09-step_01');
+                                    let pic_09_step_01_ans_content = "1. break or tear occurs in blood vessel wall.";
+                                    input_pic_09_step_01.addEventListener("change", e=>{
+                                        if(input_pic_09_step_01.value.toLowerCase() === pic_09_step_01_ans_content) {
+                                            yes_pic_09_step_01.style.display = 'unset';
+                                            no_pic_09_step_01.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_step_01.style.display = 'none';
+                                            no_pic_09_step_01.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_step_01.addEventListener('click', e=>{
+                                        input_pic_09_step_01.value = '';
+                                        yes_pic_09_step_01.style.display = 'none';
+                                        no_pic_09_step_01.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--1.step_01-->
+
+                            <div><!--2.positive_feedback_start-->
+                                <style>
+                                    #yes-pic-09-positive_feedback_start { display: none; }
+                                    #no-pic-09-positive_feedback_start { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-positive_feedback_start">✔ </label>
+                                <label class="no" id="no-pic-09-positive_feedback_start">✖ </label>
+                                <label>2 : </label>
+                                <input type="text" id="pic-09-positive_feedback_start">
+                                <button id="clear-pic-09-positive_feedback_start">清除</button>
+                                <script>
+                                    let input_pic_09_positive_feedback_start = document.getElementById('pic-09-positive_feedback_start');
+                                    let yes_pic_09_positive_feedback_start = document.getElementById('yes-pic-09-positive_feedback_start');
+                                    let no_pic_09_positive_feedback_start = document.getElementById('no-pic-09-positive_feedback_start');
+                                    let clear_pic_09_positive_feedback_start = document.getElementById('clear-pic-09-positive_feedback_start');
+                                    let pic_09_positive_feedback_start_ans_content = "positive feedback cycle is initiated.";
+                                    input_pic_09_positive_feedback_start.addEventListener("change", e=>{
+                                        if(input_pic_09_positive_feedback_start.value.toLowerCase() === pic_09_positive_feedback_start_ans_content) {
+                                            yes_pic_09_positive_feedback_start.style.display = 'unset';
+                                            no_pic_09_positive_feedback_start.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_positive_feedback_start.style.display = 'none';
+                                            no_pic_09_positive_feedback_start.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_positive_feedback_start.addEventListener('click', e=>{
+                                        input_pic_09_positive_feedback_start.value = '';
+                                        yes_pic_09_positive_feedback_start.style.display = 'none';
+                                        no_pic_09_positive_feedback_start.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--2.positive_feedback_start-->
+
+                            <div><!--3.step_02-->
+                                <style>
+                                    #yes-pic-09-step_02 { display: none; }
+                                    #no-pic-09-step_02 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-step_02">✔ </label>
+                                <label class="no" id="no-pic-09-step_02">✖ </label>
+                                <label>3 : </label>
+                                <input type="text" id="pic-09-step_02">
+                                <button id="clear-pic-09-step_02">清除</button>
+                                <script>
+                                    let input_pic_09_step_02 = document.getElementById('pic-09-step_02');
+                                    let yes_pic_09_step_02 = document.getElementById('yes-pic-09-step_02');
+                                    let no_pic_09_step_02 = document.getElementById('no-pic-09-step_02');
+                                    let clear_pic_09_step_02 = document.getElementById('clear-pic-09-step_02');
+                                    let pic_09_step_02_ans_content = "2. platelets adhere to site and release chemicals.";
+                                    input_pic_09_step_02.addEventListener("change", e=>{
+                                        if(input_pic_09_step_02.value.toLowerCase() === pic_09_step_02_ans_content) {
+                                            yes_pic_09_step_02.style.display = 'unset';
+                                            no_pic_09_step_02.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_step_02.style.display = 'none';
+                                            no_pic_09_step_02.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_step_02.addEventListener('click', e=>{
+                                        input_pic_09_step_02.value = '';
+                                        yes_pic_09_step_02.style.display = 'none';
+                                        no_pic_09_step_02.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--3.step_02-->
+
+                            <div><!--4.feedback_cycle_ends-->
+                                <style>
+                                    #yes-pic-09-feedback_cycle_ends { display: none; }
+                                    #no-pic-09-feedback_cycle_ends { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-feedback_cycle_ends">✔ </label>
+                                <label class="no" id="no-pic-09-feedback_cycle_ends">✖ </label>
+                                <label>4 : </label>
+                                <input type="text" id="pic-09-feedback_cycle_ends">
+                                <button id="clear-pic-09-feedback_cycle_ends">清除</button>
+                                <script>
+                                    let input_pic_09_feedback_cycle_ends = document.getElementById('pic-09-feedback_cycle_ends');
+                                    let yes_pic_09_feedback_cycle_ends = document.getElementById('yes-pic-09-feedback_cycle_ends');
+                                    let no_pic_09_feedback_cycle_ends = document.getElementById('no-pic-09-feedback_cycle_ends');
+                                    let clear_pic_09_feedback_cycle_ends = document.getElementById('clear-pic-09-feedback_cycle_ends');
+                                    let pic_09_feedback_cycle_ends_ans_content = "feedback cycle ends when plug is formed.";
+                                    input_pic_09_feedback_cycle_ends.addEventListener("change", e=>{
+                                        if(input_pic_09_feedback_cycle_ends.value.toLowerCase() === pic_09_feedback_cycle_ends_ans_content) {
+                                            yes_pic_09_feedback_cycle_ends.style.display = 'unset';
+                                            no_pic_09_feedback_cycle_ends.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_feedback_cycle_ends.style.display = 'none';
+                                            no_pic_09_feedback_cycle_ends.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_feedback_cycle_ends.addEventListener('click', e=>{
+                                        input_pic_09_feedback_cycle_ends.value = '';
+                                        yes_pic_09_feedback_cycle_ends.style.display = 'none';
+                                        no_pic_09_feedback_cycle_ends.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--4.feedback_cycle_ends-->
+
+                            <div><!--5.step_04-->
+                                <style>
+                                    #yes-pic-09-step_04 { display: none; }
+                                    #no-pic-09-step_04 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-step_04">✔ </label>
+                                <label class="no" id="no-pic-09-step_04">✖ </label>
+                                <label>5 : </label>
+                                <input type="text" id="pic-09-step_04">
+                                <button id="clear-pic-09-step_04">清除</button>
+                                <script>
+                                    let input_pic_09_step_04 = document.getElementById('pic-09-step_04');
+                                    let yes_pic_09_step_04 = document.getElementById('yes-pic-09-step_04');
+                                    let no_pic_09_step_04 = document.getElementById('no-pic-09-step_04');
+                                    let clear_pic_09_step_04 = document.getElementById('clear-pic-09-step_04');
+                                    let pic_09_step_04_ans_content = "4. platelet plug is fully formed.";
+                                    input_pic_09_step_04.addEventListener("change", e=>{
+                                        if(input_pic_09_step_04.value.toLowerCase() === pic_09_step_04_ans_content) {
+                                            yes_pic_09_step_04.style.display = 'unset';
+                                            no_pic_09_step_04.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_step_04.style.display = 'none';
+                                            no_pic_09_step_04.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_step_04.addEventListener('click', e=>{
+                                        input_pic_09_step_04.value = '';
+                                        yes_pic_09_step_04.style.display = 'none';
+                                        no_pic_09_step_04.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--5.step_04-->
+
+                            <div><!--6.step_03-->
+                                <style>
+                                    #yes-pic-09-step_03 { display: none; }
+                                    #no-pic-09-step_03 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-step_03">✔ </label>
+                                <label class="no" id="no-pic-09-step_03">✖ </label>
+                                <label>6 : </label>
+                                <input type="text" id="pic-09-step_03">
+                                <button id="clear-pic-09-step_03">清除</button>
+                                <script>
+                                    let input_pic_09_step_03 = document.getElementById('pic-09-step_03');
+                                    let yes_pic_09_step_03 = document.getElementById('yes-pic-09-step_03');
+                                    let no_pic_09_step_03 = document.getElementById('no-pic-09-step_03');
+                                    let clear_pic_09_step_03 = document.getElementById('clear-pic-09-step_03');
+                                    let pic_09_step_03_ans_content = "3. released chemicals attract more platelets.";
+                                    input_pic_09_step_03.addEventListener("change", e=>{
+                                        if(input_pic_09_step_03.value.toLowerCase() === pic_09_step_03_ans_content) {
+                                            yes_pic_09_step_03.style.display = 'unset';
+                                            no_pic_09_step_03.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_step_03.style.display = 'none';
+                                            no_pic_09_step_03.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_step_03.addEventListener('click', e=>{
+                                        input_pic_09_step_03.value = '';
+                                        yes_pic_09_step_03.style.display = 'none';
+                                        no_pic_09_step_03.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--6.step_03-->
+
+                            <div><!--7.positive_feedback_loop-->
+                                <style>
+                                    #yes-pic-09-positive_feedback_loop { display: none; }
+                                    #no-pic-09-positive_feedback_loop { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-09-positive_feedback_loop">✔ </label>
+                                <label class="no" id="no-pic-09-positive_feedback_loop">✖ </label>
+                                <label>7 : </label>
+                                <input type="text" id="pic-09-positive_feedback_loop">
+                                <button id="clear-pic-09-positive_feedback_loop">清除</button>
+                                <script>
+                                    let input_pic_09_positive_feedback_loop = document.getElementById('pic-09-positive_feedback_loop');
+                                    let yes_pic_09_positive_feedback_loop = document.getElementById('yes-pic-09-positive_feedback_loop');
+                                    let no_pic_09_positive_feedback_loop = document.getElementById('no-pic-09-positive_feedback_loop');
+                                    let clear_pic_09_positive_feedback_loop = document.getElementById('clear-pic-09-positive_feedback_loop');
+                                    let pic_09_positive_feedback_loop_ans_content = "positive feedback loop";
+                                    input_pic_09_positive_feedback_loop.addEventListener("change", e=>{
+                                        if(input_pic_09_positive_feedback_loop.value.toLowerCase() === pic_09_positive_feedback_loop_ans_content) {
+                                            yes_pic_09_positive_feedback_loop.style.display = 'unset';
+                                            no_pic_09_positive_feedback_loop.style.display = 'none';
+                                        }else {
+                                            yes_pic_09_positive_feedback_loop.style.display = 'none';
+                                            no_pic_09_positive_feedback_loop.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_09_positive_feedback_loop.addEventListener('click', e=>{
+                                        input_pic_09_positive_feedback_loop.value = '';
+                                        yes_pic_09_positive_feedback_loop.style.display = 'none';
+                                        no_pic_09_positive_feedback_loop.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--7.positive_feedback_loop-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--圖片題09--><!--凝血反應-->
+
+            <div class="question"><!--圖片題10--><!--人體方位01-->
+                <div class="question-content">
+                    <img id="pic_10_imgsrc" src="https://raw.githubusercontent.com/Hanck1215/Physiology/main/(a)orientation_terms_que.png">
+                    <style>
+                        #pic_10_imgsrc {
+                            width: 1000px;
+                        }
+                        .pic-questions-orientation {
+                            display: block;
+                            margin-top: 6%;
+                            margin-bottom: 50px;
+                            width: 1200px;
+                        }
+                        .pic-questions-orientation button {
+                            font-size: 1rem;
+                            color: rgb(72, 57, 46);
+                            border: 2px rgba(68, 51, 34, 0.75) solid;
+                            border-radius: 20px;
+                            padding: 3px 12px;
+                            background-color: rgb(255, 246, 218);
+                            margin-top: 12px;
+                        }
+                        .pic-questions-orientation button:hover {
+                            background-color: rgb(216, 206, 177);
+                        }
+                        .pic-questions-orientation button:active {
+                            background-color: rgb(237, 226, 194);
+                        }
+                        .pic-questions-orientation input[type="text"] {
+                            width: 1000px;
+                        }
+                    </style>
+                    <div>
+                        <button class="pic-ans-btn" id="pic-10-ans-btn">看答案</button>
+                    </div>
+                    <script>
+                        let pic_10_imgsrc_q = true;
+                        let pic_10_ans_btn = document.getElementById('pic-10-ans-btn');
+                        pic_10_ans_btn.addEventListener('click', e=>{
+                            let pic_10_imgsrc = document.getElementById('pic_10_imgsrc');
+                            console.log(pic_10_imgsrc.src);
+                            if(pic_10_imgsrc_q) {
+                                pic_10_ans_btn.textContent = '隱藏答案';
+                                pic_10_imgsrc_q = !pic_10_imgsrc_q;
+                                pic_10_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/(a)orientation_terms_ans.png';
+                            }else if(!pic_10_imgsrc_q) {
+                                pic_10_ans_btn.textContent = '看答案';
+                                pic_10_imgsrc_q = !pic_10_imgsrc_q;
+                                pic_10_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/(a)orientation_terms_que.png';
+                            }
+                        });
+                    </script>
+    
+                    <div class="pic-questions-wrapper">
+                        <div class="pic-questions-orientation">
+                            <div><!--1.superior-->
+                                <style>
+                                    #yes-pic-10-superior { display: none; }
+                                    #no-pic-10-superior { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-superior">✔ </label>
+                                <label class="no" id="no-pic-10-superior">✖ </label>
+                                <label>1 : </label>
+                                <input type="text" id="pic-10-superior">
+                                <button id="clear-pic-10-superior">清除</button>
+                                <script>
+                                    let input_pic_10_superior = document.getElementById('pic-10-superior');
+                                    let yes_pic_10_superior = document.getElementById('yes-pic-10-superior');
+                                    let no_pic_10_superior = document.getElementById('no-pic-10-superior');
+                                    let clear_pic_10_superior = document.getElementById('clear-pic-10-superior');
+                                    let pic_10_superior_ans_content = "superior(cranial)";
+                                    input_pic_10_superior.addEventListener("change", e=>{
+                                        if(input_pic_10_superior.value.toLowerCase() === pic_10_superior_ans_content) {
+                                            yes_pic_10_superior.style.display = 'unset';
+                                            no_pic_10_superior.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_superior.style.display = 'none';
+                                            no_pic_10_superior.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_superior.addEventListener('click', e=>{
+                                        input_pic_10_superior.value = '';
+                                        yes_pic_10_superior.style.display = 'none';
+                                        no_pic_10_superior.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--1.superior-->
+
+                            <div><!--2.superior_above-->
+                                <style>
+                                    #yes-pic-10-superior_above { display: none; }
+                                    #no-pic-10-superior_above { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-superior_above">✔ </label>
+                                <label class="no" id="no-pic-10-superior_above">✖ </label>
+                                <label>2 : </label>
+                                <input type="text" id="pic-10-superior_above">
+                                <button id="clear-pic-10-superior_above">清除</button>
+                                <script>
+                                    let input_pic_10_superior_above = document.getElementById('pic-10-superior_above');
+                                    let yes_pic_10_superior_above = document.getElementById('yes-pic-10-superior_above');
+                                    let no_pic_10_superior_above = document.getElementById('no-pic-10-superior_above');
+                                    let clear_pic_10_superior_above = document.getElementById('clear-pic-10-superior_above');
+                                    let pic_10_superior_above_ans_content = "toward the head end or upper part of a structure or the body; above";
+                                    input_pic_10_superior_above.addEventListener("change", e=>{
+                                        if(input_pic_10_superior_above.value.toLowerCase() === pic_10_superior_above_ans_content) {
+                                            yes_pic_10_superior_above.style.display = 'unset';
+                                            no_pic_10_superior_above.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_superior_above.style.display = 'none';
+                                            no_pic_10_superior_above.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_superior_above.addEventListener('click', e=>{
+                                        input_pic_10_superior_above.value = '';
+                                        yes_pic_10_superior_above.style.display = 'none';
+                                        no_pic_10_superior_above.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--2.superior_above-->
+
+                            <div><!--3.superior_ex-->
+                                <style>
+                                    #yes-pic-10-superior_ex { display: none; }
+                                    #no-pic-10-superior_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-superior_ex">✔ </label>
+                                <label class="no" id="no-pic-10-superior_ex">✖ </label>
+                                <label>3 : </label>
+                                <input type="text" id="pic-10-superior_ex">
+                                <button id="clear-pic-10-superior_ex">清除</button>
+                                <script>
+                                    let input_pic_10_superior_ex = document.getElementById('pic-10-superior_ex');
+                                    let yes_pic_10_superior_ex = document.getElementById('yes-pic-10-superior_ex');
+                                    let no_pic_10_superior_ex = document.getElementById('no-pic-10-superior_ex');
+                                    let clear_pic_10_superior_ex = document.getElementById('clear-pic-10-superior_ex');
+                                    let pic_10_superior_ex_ans_content = "the head is superior to the abdomen.";
+                                    input_pic_10_superior_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_superior_ex.value.toLowerCase() === pic_10_superior_ex_ans_content) {
+                                            yes_pic_10_superior_ex.style.display = 'unset';
+                                            no_pic_10_superior_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_superior_ex.style.display = 'none';
+                                            no_pic_10_superior_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_superior_ex.addEventListener('click', e=>{
+                                        input_pic_10_superior_ex.value = '';
+                                        yes_pic_10_superior_ex.style.display = 'none';
+                                        no_pic_10_superior_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--3.superior_ex-->
+
+                            <div><!--4.inferior-->
+                                <style>
+                                    #yes-pic-10-inferior { display: none; }
+                                    #no-pic-10-inferior { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-inferior">✔ </label>
+                                <label class="no" id="no-pic-10-inferior">✖ </label>
+                                <label>4 : </label>
+                                <input type="text" id="pic-10-inferior">
+                                <button id="clear-pic-10-inferior">清除</button>
+                                <script>
+                                    let input_pic_10_inferior = document.getElementById('pic-10-inferior');
+                                    let yes_pic_10_inferior = document.getElementById('yes-pic-10-inferior');
+                                    let no_pic_10_inferior = document.getElementById('no-pic-10-inferior');
+                                    let clear_pic_10_inferior = document.getElementById('clear-pic-10-inferior');
+                                    let pic_10_inferior_ans_content = "inferior(caudal)";
+                                    input_pic_10_inferior.addEventListener("change", e=>{
+                                        if(input_pic_10_inferior.value.toLowerCase() === pic_10_inferior_ans_content) {
+                                            yes_pic_10_inferior.style.display = 'unset';
+                                            no_pic_10_inferior.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_inferior.style.display = 'none';
+                                            no_pic_10_inferior.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_inferior.addEventListener('click', e=>{
+                                        input_pic_10_inferior.value = '';
+                                        yes_pic_10_inferior.style.display = 'none';
+                                        no_pic_10_inferior.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--4.inferior-->
+
+                            <div><!--5.inferior_below-->
+                                <style>
+                                    #yes-pic-10-inferior_below { display: none; }
+                                    #no-pic-10-inferior_below { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-inferior_below">✔ </label>
+                                <label class="no" id="no-pic-10-inferior_below">✖ </label>
+                                <label>5 : </label>
+                                <input type="text" id="pic-10-inferior_below">
+                                <button id="clear-pic-10-inferior_below">清除</button>
+                                <script>
+                                    let input_pic_10_inferior_below = document.getElementById('pic-10-inferior_below');
+                                    let yes_pic_10_inferior_below = document.getElementById('yes-pic-10-inferior_below');
+                                    let no_pic_10_inferior_below = document.getElementById('no-pic-10-inferior_below');
+                                    let clear_pic_10_inferior_below = document.getElementById('clear-pic-10-inferior_below');
+                                    let pic_10_inferior_below_ans_content = "away from the head end or toward the lower part of a structure or the body; below";
+                                    input_pic_10_inferior_below.addEventListener("change", e=>{
+                                        if(input_pic_10_inferior_below.value.toLowerCase() === pic_10_inferior_below_ans_content) {
+                                            yes_pic_10_inferior_below.style.display = 'unset';
+                                            no_pic_10_inferior_below.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_inferior_below.style.display = 'none';
+                                            no_pic_10_inferior_below.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_inferior_below.addEventListener('click', e=>{
+                                        input_pic_10_inferior_below.value = '';
+                                        yes_pic_10_inferior_below.style.display = 'none';
+                                        no_pic_10_inferior_below.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--5.inferior_below-->
+
+                            <div><!--6.inferior_ex-->
+                                <style>
+                                    #yes-pic-10-inferior_ex { display: none; }
+                                    #no-pic-10-inferior_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-inferior_ex">✔ </label>
+                                <label class="no" id="no-pic-10-inferior_ex">✖ </label>
+                                <label>6 : </label>
+                                <input type="text" id="pic-10-inferior_ex">
+                                <button id="clear-pic-10-inferior_ex">清除</button>
+                                <script>
+                                    let input_pic_10_inferior_ex = document.getElementById('pic-10-inferior_ex');
+                                    let yes_pic_10_inferior_ex = document.getElementById('yes-pic-10-inferior_ex');
+                                    let no_pic_10_inferior_ex = document.getElementById('no-pic-10-inferior_ex');
+                                    let clear_pic_10_inferior_ex = document.getElementById('clear-pic-10-inferior_ex');
+                                    let pic_10_inferior_ex_ans_content = "the navel is inferior to the chin.";
+                                    input_pic_10_inferior_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_inferior_ex.value.toLowerCase() === pic_10_inferior_ex_ans_content) {
+                                            yes_pic_10_inferior_ex.style.display = 'unset';
+                                            no_pic_10_inferior_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_inferior_ex.style.display = 'none';
+                                            no_pic_10_inferior_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_inferior_ex.addEventListener('click', e=>{
+                                        input_pic_10_inferior_ex.value = '';
+                                        yes_pic_10_inferior_ex.style.display = 'none';
+                                        no_pic_10_inferior_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--6.inferior_ex-->
+
+                            <div><!--7.anterior-->
+                                <style>
+                                    #yes-pic-10-anterior { display: none; }
+                                    #no-pic-10-anterior { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-anterior">✔ </label>
+                                <label class="no" id="no-pic-10-anterior">✖ </label>
+                                <label>7 : </label>
+                                <input type="text" id="pic-10-anterior">
+                                <button id="clear-pic-10-anterior">清除</button>
+                                <script>
+                                    let input_pic_10_anterior = document.getElementById('pic-10-anterior');
+                                    let yes_pic_10_anterior = document.getElementById('yes-pic-10-anterior');
+                                    let no_pic_10_anterior = document.getElementById('no-pic-10-anterior');
+                                    let clear_pic_10_anterior = document.getElementById('clear-pic-10-anterior');
+                                    let pic_10_anterior_ans_content = "anterior(ventral)";
+                                    input_pic_10_anterior.addEventListener("change", e=>{
+                                        if(input_pic_10_anterior.value.toLowerCase() === pic_10_anterior_ans_content) {
+                                            yes_pic_10_anterior.style.display = 'unset';
+                                            no_pic_10_anterior.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_anterior.style.display = 'none';
+                                            no_pic_10_anterior.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_anterior.addEventListener('click', e=>{
+                                        input_pic_10_anterior.value = '';
+                                        yes_pic_10_anterior.style.display = 'none';
+                                        no_pic_10_anterior.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--7.anterior-->
+
+                            <div><!--8.anterior_front-->
+                                <style>
+                                    #yes-pic-10-anterior_front { display: none; }
+                                    #no-pic-10-anterior_front { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-anterior_front">✔ </label>
+                                <label class="no" id="no-pic-10-anterior_front">✖ </label>
+                                <label>8 : </label>
+                                <input type="text" id="pic-10-anterior_front">
+                                <button id="clear-pic-10-anterior_front">清除</button>
+                                <script>
+                                    let input_pic_10_anterior_front = document.getElementById('pic-10-anterior_front');
+                                    let yes_pic_10_anterior_front = document.getElementById('yes-pic-10-anterior_front');
+                                    let no_pic_10_anterior_front = document.getElementById('no-pic-10-anterior_front');
+                                    let clear_pic_10_anterior_front = document.getElementById('clear-pic-10-anterior_front');
+                                    let pic_10_anterior_front_ans_content = "toward or at the front of the body; in front of";
+                                    input_pic_10_anterior_front.addEventListener("change", e=>{
+                                        if(input_pic_10_anterior_front.value.toLowerCase() === pic_10_anterior_front_ans_content) {
+                                            yes_pic_10_anterior_front.style.display = 'unset';
+                                            no_pic_10_anterior_front.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_anterior_front.style.display = 'none';
+                                            no_pic_10_anterior_front.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_anterior_front.addEventListener('click', e=>{
+                                        input_pic_10_anterior_front.value = '';
+                                        yes_pic_10_anterior_front.style.display = 'none';
+                                        no_pic_10_anterior_front.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--8.anterior_front-->
+
+                            <div><!--9.anterior_ex-->
+                                <style>
+                                    #yes-pic-10-anterior_ex { display: none; }
+                                    #no-pic-10-anterior_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-anterior_ex">✔ </label>
+                                <label class="no" id="no-pic-10-anterior_ex">✖ </label>
+                                <label>9 : </label>
+                                <input type="text" id="pic-10-anterior_ex">
+                                <button id="clear-pic-10-anterior_ex">清除</button>
+                                <script>
+                                    let input_pic_10_anterior_ex = document.getElementById('pic-10-anterior_ex');
+                                    let yes_pic_10_anterior_ex = document.getElementById('yes-pic-10-anterior_ex');
+                                    let no_pic_10_anterior_ex = document.getElementById('no-pic-10-anterior_ex');
+                                    let clear_pic_10_anterior_ex = document.getElementById('clear-pic-10-anterior_ex');
+                                    let pic_10_anterior_ex_ans_content = "the breastbone is anterior to the spine.";
+                                    input_pic_10_anterior_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_anterior_ex.value.toLowerCase() === pic_10_anterior_ex_ans_content) {
+                                            yes_pic_10_anterior_ex.style.display = 'unset';
+                                            no_pic_10_anterior_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_anterior_ex.style.display = 'none';
+                                            no_pic_10_anterior_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_anterior_ex.addEventListener('click', e=>{
+                                        input_pic_10_anterior_ex.value = '';
+                                        yes_pic_10_anterior_ex.style.display = 'none';
+                                        no_pic_10_anterior_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--9.anterior_ex-->
+
+                            <div><!--10.posterior-->
+                                <style>
+                                    #yes-pic-10-posterior { display: none; }
+                                    #no-pic-10-posterior { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-posterior">✔ </label>
+                                <label class="no" id="no-pic-10-posterior">✖ </label>
+                                <label>10 : </label>
+                                <input type="text" id="pic-10-posterior">
+                                <button id="clear-pic-10-posterior">清除</button>
+                                <script>
+                                    let input_pic_10_posterior = document.getElementById('pic-10-posterior');
+                                    let yes_pic_10_posterior = document.getElementById('yes-pic-10-posterior');
+                                    let no_pic_10_posterior = document.getElementById('no-pic-10-posterior');
+                                    let clear_pic_10_posterior = document.getElementById('clear-pic-10-posterior');
+                                    let pic_10_posterior_ans_content = "posterior(dorsal)";
+                                    input_pic_10_posterior.addEventListener("change", e=>{
+                                        if(input_pic_10_posterior.value.toLowerCase() === pic_10_posterior_ans_content) {
+                                            yes_pic_10_posterior.style.display = 'unset';
+                                            no_pic_10_posterior.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_posterior.style.display = 'none';
+                                            no_pic_10_posterior.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_posterior.addEventListener('click', e=>{
+                                        input_pic_10_posterior.value = '';
+                                        yes_pic_10_posterior.style.display = 'none';
+                                        no_pic_10_posterior.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--10.posterior-->
+
+                            <div><!--11.posterior_behind-->
+                                <style>
+                                    #yes-pic-10-posterior_behind { display: none; }
+                                    #no-pic-10-posterior_behind { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-posterior_behind">✔ </label>
+                                <label class="no" id="no-pic-10-posterior_behind">✖ </label>
+                                <label>11 : </label>
+                                <input type="text" id="pic-10-posterior_behind">
+                                <button id="clear-pic-10-posterior_behind">清除</button>
+                                <script>
+                                    let input_pic_10_posterior_behind = document.getElementById('pic-10-posterior_behind');
+                                    let yes_pic_10_posterior_behind = document.getElementById('yes-pic-10-posterior_behind');
+                                    let no_pic_10_posterior_behind = document.getElementById('no-pic-10-posterior_behind');
+                                    let clear_pic_10_posterior_behind = document.getElementById('clear-pic-10-posterior_behind');
+                                    let pic_10_posterior_behind_ans_content = "toward or at the back of the body; behind";
+                                    input_pic_10_posterior_behind.addEventListener("change", e=>{
+                                        if(input_pic_10_posterior_behind.value.toLowerCase() === pic_10_posterior_behind_ans_content) {
+                                            yes_pic_10_posterior_behind.style.display = 'unset';
+                                            no_pic_10_posterior_behind.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_posterior_behind.style.display = 'none';
+                                            no_pic_10_posterior_behind.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_posterior_behind.addEventListener('click', e=>{
+                                        input_pic_10_posterior_behind.value = '';
+                                        yes_pic_10_posterior_behind.style.display = 'none';
+                                        no_pic_10_posterior_behind.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--11.posterior_behind-->
+
+                            <div><!--12.posterior_ex-->
+                                <style>
+                                    #yes-pic-10-posterior_ex { display: none; }
+                                    #no-pic-10-posterior_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-posterior_ex">✔ </label>
+                                <label class="no" id="no-pic-10-posterior_ex">✖ </label>
+                                <label>12 : </label>
+                                <input type="text" id="pic-10-posterior_ex">
+                                <button id="clear-pic-10-posterior_ex">清除</button>
+                                <script>
+                                    let input_pic_10_posterior_ex = document.getElementById('pic-10-posterior_ex');
+                                    let yes_pic_10_posterior_ex = document.getElementById('yes-pic-10-posterior_ex');
+                                    let no_pic_10_posterior_ex = document.getElementById('no-pic-10-posterior_ex');
+                                    let clear_pic_10_posterior_ex = document.getElementById('clear-pic-10-posterior_ex');
+                                    let pic_10_posterior_ex_ans_content = "the heart is posterior to the breastbone.";
+                                    input_pic_10_posterior_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_posterior_ex.value.toLowerCase() === pic_10_posterior_ex_ans_content) {
+                                            yes_pic_10_posterior_ex.style.display = 'unset';
+                                            no_pic_10_posterior_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_posterior_ex.style.display = 'none';
+                                            no_pic_10_posterior_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_posterior_ex.addEventListener('click', e=>{
+                                        input_pic_10_posterior_ex.value = '';
+                                        yes_pic_10_posterior_ex.style.display = 'none';
+                                        no_pic_10_posterior_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--12.posterior_ex-->
+
+                            <div><!--13.medial-->
+                                <style>
+                                    #yes-pic-10-medial { display: none; }
+                                    #no-pic-10-medial { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-medial">✔ </label>
+                                <label class="no" id="no-pic-10-medial">✖ </label>
+                                <label>13 : </label>
+                                <input type="text" id="pic-10-medial">
+                                <button id="clear-pic-10-medial">清除</button>
+                                <script>
+                                    let input_pic_10_medial = document.getElementById('pic-10-medial');
+                                    let yes_pic_10_medial = document.getElementById('yes-pic-10-medial');
+                                    let no_pic_10_medial = document.getElementById('no-pic-10-medial');
+                                    let clear_pic_10_medial = document.getElementById('clear-pic-10-medial');
+                                    let pic_10_medial_ans_content = "medial";
+                                    input_pic_10_medial.addEventListener("change", e=>{
+                                        if(input_pic_10_medial.value.toLowerCase() === pic_10_medial_ans_content) {
+                                            yes_pic_10_medial.style.display = 'unset';
+                                            no_pic_10_medial.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_medial.style.display = 'none';
+                                            no_pic_10_medial.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_medial.addEventListener('click', e=>{
+                                        input_pic_10_medial.value = '';
+                                        yes_pic_10_medial.style.display = 'none';
+                                        no_pic_10_medial.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--13.medial-->
+
+                            <div><!--14.medial_side-->
+                                <style>
+                                    #yes-pic-10-medial_side { display: none; }
+                                    #no-pic-10-medial_side { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-medial_side">✔ </label>
+                                <label class="no" id="no-pic-10-medial_side">✖ </label>
+                                <label>14 : </label>
+                                <input type="text" id="pic-10-medial_side">
+                                <button id="clear-pic-10-medial_side">清除</button>
+                                <script>
+                                    let input_pic_10_medial_side = document.getElementById('pic-10-medial_side');
+                                    let yes_pic_10_medial_side = document.getElementById('yes-pic-10-medial_side');
+                                    let no_pic_10_medial_side = document.getElementById('no-pic-10-medial_side');
+                                    let clear_pic_10_medial_side = document.getElementById('clear-pic-10-medial_side');
+                                    let pic_10_medial_side_ans_content = "toward or at the midline of the body; on the inner side of";
+                                    input_pic_10_medial_side.addEventListener("change", e=>{
+                                        if(input_pic_10_medial_side.value.toLowerCase() === pic_10_medial_side_ans_content) {
+                                            yes_pic_10_medial_side.style.display = 'unset';
+                                            no_pic_10_medial_side.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_medial_side.style.display = 'none';
+                                            no_pic_10_medial_side.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_medial_side.addEventListener('click', e=>{
+                                        input_pic_10_medial_side.value = '';
+                                        yes_pic_10_medial_side.style.display = 'none';
+                                        no_pic_10_medial_side.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--14.medial_side-->
+
+                            <div><!--15.medial_ex-->
+                                <style>
+                                    #yes-pic-10-medial_ex { display: none; }
+                                    #no-pic-10-medial_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-medial_ex">✔ </label>
+                                <label class="no" id="no-pic-10-medial_ex">✖ </label>
+                                <label>15 : </label>
+                                <input type="text" id="pic-10-medial_ex">
+                                <button id="clear-pic-10-medial_ex">清除</button>
+                                <script>
+                                    let input_pic_10_medial_ex = document.getElementById('pic-10-medial_ex');
+                                    let yes_pic_10_medial_ex = document.getElementById('yes-pic-10-medial_ex');
+                                    let no_pic_10_medial_ex = document.getElementById('no-pic-10-medial_ex');
+                                    let clear_pic_10_medial_ex = document.getElementById('clear-pic-10-medial_ex');
+                                    let pic_10_medial_ex_ans_content = "the heart is medial to the arm.";
+                                    input_pic_10_medial_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_medial_ex.value.toLowerCase() === pic_10_medial_ex_ans_content) {
+                                            yes_pic_10_medial_ex.style.display = 'unset';
+                                            no_pic_10_medial_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_medial_ex.style.display = 'none';
+                                            no_pic_10_medial_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_medial_ex.addEventListener('click', e=>{
+                                        input_pic_10_medial_ex.value = '';
+                                        yes_pic_10_medial_ex.style.display = 'none';
+                                        no_pic_10_medial_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--15.medial_ex-->
+
+                            <div><!--16.lateral-->
+                                <style>
+                                    #yes-pic-10-lateral { display: none; }
+                                    #no-pic-10-lateral { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-lateral">✔ </label>
+                                <label class="no" id="no-pic-10-lateral">✖ </label>
+                                <label>16 : </label>
+                                <input type="text" id="pic-10-lateral">
+                                <button id="clear-pic-10-lateral">清除</button>
+                                <script>
+                                    let input_pic_10_lateral = document.getElementById('pic-10-lateral');
+                                    let yes_pic_10_lateral = document.getElementById('yes-pic-10-lateral');
+                                    let no_pic_10_lateral = document.getElementById('no-pic-10-lateral');
+                                    let clear_pic_10_lateral = document.getElementById('clear-pic-10-lateral');
+                                    let pic_10_lateral_ans_content = "lateral";
+                                    input_pic_10_lateral.addEventListener("change", e=>{
+                                        if(input_pic_10_lateral.value.toLowerCase() === pic_10_lateral_ans_content) {
+                                            yes_pic_10_lateral.style.display = 'unset';
+                                            no_pic_10_lateral.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_lateral.style.display = 'none';
+                                            no_pic_10_lateral.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_lateral.addEventListener('click', e=>{
+                                        input_pic_10_lateral.value = '';
+                                        yes_pic_10_lateral.style.display = 'none';
+                                        no_pic_10_lateral.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--16.lateral-->
+
+                            <div><!--17.lateral_side-->
+                                <style>
+                                    #yes-pic-10-lateral_side { display: none; }
+                                    #no-pic-10-lateral_side { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-lateral_side">✔ </label>
+                                <label class="no" id="no-pic-10-lateral_side">✖ </label>
+                                <label>17 : </label>
+                                <input type="text" id="pic-10-lateral_side">
+                                <button id="clear-pic-10-lateral_side">清除</button>
+                                <script>
+                                    let input_pic_10_lateral_side = document.getElementById('pic-10-lateral_side');
+                                    let yes_pic_10_lateral_side = document.getElementById('yes-pic-10-lateral_side');
+                                    let no_pic_10_lateral_side = document.getElementById('no-pic-10-lateral_side');
+                                    let clear_pic_10_lateral_side = document.getElementById('clear-pic-10-lateral_side');
+                                    let pic_10_lateral_side_ans_content = "away from the midline of the body; on the outer side of";
+                                    input_pic_10_lateral_side.addEventListener("change", e=>{
+                                        if(input_pic_10_lateral_side.value.toLowerCase() === pic_10_lateral_side_ans_content) {
+                                            yes_pic_10_lateral_side.style.display = 'unset';
+                                            no_pic_10_lateral_side.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_lateral_side.style.display = 'none';
+                                            no_pic_10_lateral_side.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_lateral_side.addEventListener('click', e=>{
+                                        input_pic_10_lateral_side.value = '';
+                                        yes_pic_10_lateral_side.style.display = 'none';
+                                        no_pic_10_lateral_side.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--17.lateral_side-->
+
+                            <div><!--18.lateral_ex-->
+                                <style>
+                                    #yes-pic-10-lateral_ex { display: none; }
+                                    #no-pic-10-lateral_ex { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-10-lateral_ex">✔ </label>
+                                <label class="no" id="no-pic-10-lateral_ex">✖ </label>
+                                <label>18 : </label>
+                                <input type="text" id="pic-10-lateral_ex">
+                                <button id="clear-pic-10-lateral_ex">清除</button>
+                                <script>
+                                    let input_pic_10_lateral_ex = document.getElementById('pic-10-lateral_ex');
+                                    let yes_pic_10_lateral_ex = document.getElementById('yes-pic-10-lateral_ex');
+                                    let no_pic_10_lateral_ex = document.getElementById('no-pic-10-lateral_ex');
+                                    let clear_pic_10_lateral_ex = document.getElementById('clear-pic-10-lateral_ex');
+                                    let pic_10_lateral_ex_ans_content = "the arms are lateral to the chest.";
+                                    input_pic_10_lateral_ex.addEventListener("change", e=>{
+                                        if(input_pic_10_lateral_ex.value.toLowerCase() === pic_10_lateral_ex_ans_content) {
+                                            yes_pic_10_lateral_ex.style.display = 'unset';
+                                            no_pic_10_lateral_ex.style.display = 'none';
+                                        }else {
+                                            yes_pic_10_lateral_ex.style.display = 'none';
+                                            no_pic_10_lateral_ex.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_10_lateral_ex.addEventListener('click', e=>{
+                                        input_pic_10_lateral_ex.value = '';
+                                        yes_pic_10_lateral_ex.style.display = 'none';
+                                        no_pic_10_lateral_ex.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--18.lateral_ex-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--圖片題10--><!--人體方位01-->
+
+            <div class="question"><!--圖片題11--><!--人體方位02-->
+                <div class="question-content">
+                    <img id="pic_11_imgsrc" src="https://raw.githubusercontent.com/Hanck1215/Physiology/main/(b)orientation_terms_que.png">
+                    <style>
+                        #pic_11_imgsrc {
+                            width: 1000px;
+                        }
+                    </style>
+                    <div>
+                        <button class="pic-ans-btn" id="pic-11-ans-btn">看答案</button>
+                    </div>
+                    <script>
+                        let pic_11_imgsrc_q = true;
+                        let pic_11_ans_btn = document.getElementById('pic-11-ans-btn');
+                        pic_11_ans_btn.addEventListener('click', e=>{
+                            let pic_11_imgsrc = document.getElementById('pic_11_imgsrc');
+                            console.log(pic_11_imgsrc.src);
+                            if(pic_11_imgsrc_q) {
+                                pic_11_ans_btn.textContent = '隱藏答案';
+                                pic_11_imgsrc_q = !pic_11_imgsrc_q;
+                                pic_11_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/(b)orientation_terms_ans.png';
+                            }else if(!pic_11_imgsrc_q) {
+                                pic_11_ans_btn.textContent = '看答案';
+                                pic_11_imgsrc_q = !pic_11_imgsrc_q;
+                                pic_11_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/(b)orientation_terms_que.png';
+                            }
+                        });
+                    </script>
+    
+                    <div class="pic-questions-wrapper">
+                        <div class="pic-questions-orientation">
+                            <div><!--1.intermediate-->
+                                <style>
+                                    #yes-pic-11-intermediate { display: none; }
+                                    #no-pic-11-intermediate { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-intermediate">✔ </label>
+                                <label class="no" id="no-pic-11-intermediate">✖ </label>
+                                <label>1 : </label>
+                                <input type="text" id="pic-11-intermediate">
+                                <button id="clear-pic-11-intermediate">清除</button>
+                                <script>
+                                    let input_pic_11_intermediate = document.getElementById('pic-11-intermediate');
+                                    let yes_pic_11_intermediate = document.getElementById('yes-pic-11-intermediate');
+                                    let no_pic_11_intermediate = document.getElementById('no-pic-11-intermediate');
+                                    let clear_pic_11_intermediate = document.getElementById('clear-pic-11-intermediate');
+                                    let pic_11_intermediate_ans_content = "intermediate";
+                                    input_pic_11_intermediate.addEventListener("change", e=>{
+                                        if(input_pic_11_intermediate.value.toLowerCase() === pic_11_intermediate_ans_content) {
+                                            yes_pic_11_intermediate.style.display = 'unset';
+                                            no_pic_11_intermediate.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_intermediate.style.display = 'none';
+                                            no_pic_11_intermediate.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_intermediate.addEventListener('click', e=>{
+                                        input_pic_11_intermediate.value = '';
+                                        yes_pic_11_intermediate.style.display = 'none';
+                                        no_pic_11_intermediate.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--1.intermediate-->
+
+                            <div><!--2.intermediate_desctiption-->
+                                <style>
+                                    #yes-pic-11-intermediate_desctiption { display: none; }
+                                    #no-pic-11-intermediate_desctiption { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-intermediate_desctiption">✔ </label>
+                                <label class="no" id="no-pic-11-intermediate_desctiption">✖ </label>
+                                <label>2 : </label>
+                                <input type="text" id="pic-11-intermediate_desctiption">
+                                <button id="clear-pic-11-intermediate_desctiption">清除</button>
+                                <script>
+                                    let input_pic_11_intermediate_desctiption = document.getElementById('pic-11-intermediate_desctiption');
+                                    let yes_pic_11_intermediate_desctiption = document.getElementById('yes-pic-11-intermediate_desctiption');
+                                    let no_pic_11_intermediate_desctiption = document.getElementById('no-pic-11-intermediate_desctiption');
+                                    let clear_pic_11_intermediate_desctiption = document.getElementById('clear-pic-11-intermediate_desctiption');
+                                    let pic_11_intermediate_desctiption_ans_content = "between a more medial and a more lateral structure";
+                                    input_pic_11_intermediate_desctiption.addEventListener("change", e=>{
+                                        if(input_pic_11_intermediate_desctiption.value.toLowerCase() === pic_11_intermediate_desctiption_ans_content) {
+                                            yes_pic_11_intermediate_desctiption.style.display = 'unset';
+                                            no_pic_11_intermediate_desctiption.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_intermediate_desctiption.style.display = 'none';
+                                            no_pic_11_intermediate_desctiption.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_intermediate_desctiption.addEventListener('click', e=>{
+                                        input_pic_11_intermediate_desctiption.value = '';
+                                        yes_pic_11_intermediate_desctiption.style.display = 'none';
+                                        no_pic_11_intermediate_desctiption.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--2.intermediate_desctiption-->
+
+                            <div><!--3.intermediate_example-->
+                                <style>
+                                    #yes-pic-11-intermediate_example { display: none; }
+                                    #no-pic-11-intermediate_example { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-intermediate_example">✔ </label>
+                                <label class="no" id="no-pic-11-intermediate_example">✖ </label>
+                                <label>3 : </label>
+                                <input type="text" id="pic-11-intermediate_example">
+                                <button id="clear-pic-11-intermediate_example">清除</button>
+                                <script>
+                                    let input_pic_11_intermediate_example = document.getElementById('pic-11-intermediate_example');
+                                    let yes_pic_11_intermediate_example = document.getElementById('yes-pic-11-intermediate_example');
+                                    let no_pic_11_intermediate_example = document.getElementById('no-pic-11-intermediate_example');
+                                    let clear_pic_11_intermediate_example = document.getElementById('clear-pic-11-intermediate_example');
+                                    let pic_11_intermediate_example_ans_content = "the collarbone is intermediate between the breastbone and shoulder.";
+                                    input_pic_11_intermediate_example.addEventListener("change", e=>{
+                                        if(input_pic_11_intermediate_example.value.toLowerCase() === pic_11_intermediate_example_ans_content) {
+                                            yes_pic_11_intermediate_example.style.display = 'unset';
+                                            no_pic_11_intermediate_example.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_intermediate_example.style.display = 'none';
+                                            no_pic_11_intermediate_example.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_intermediate_example.addEventListener('click', e=>{
+                                        input_pic_11_intermediate_example.value = '';
+                                        yes_pic_11_intermediate_example.style.display = 'none';
+                                        no_pic_11_intermediate_example.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--3.intermediate_example-->
+
+                            <div><!--4.proximal-->
+                                <style>
+                                    #yes-pic-11-proximal { display: none; }
+                                    #no-pic-11-proximal { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-proximal">✔ </label>
+                                <label class="no" id="no-pic-11-proximal">✖ </label>
+                                <label>4 : </label>
+                                <input type="text" id="pic-11-proximal">
+                                <button id="clear-pic-11-proximal">清除</button>
+                                <script>
+                                    let input_pic_11_proximal = document.getElementById('pic-11-proximal');
+                                    let yes_pic_11_proximal = document.getElementById('yes-pic-11-proximal');
+                                    let no_pic_11_proximal = document.getElementById('no-pic-11-proximal');
+                                    let clear_pic_11_proximal = document.getElementById('clear-pic-11-proximal');
+                                    let pic_11_proximal_ans_content = "proximal";
+                                    input_pic_11_proximal.addEventListener("change", e=>{
+                                        if(input_pic_11_proximal.value.toLowerCase() === pic_11_proximal_ans_content) {
+                                            yes_pic_11_proximal.style.display = 'unset';
+                                            no_pic_11_proximal.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_proximal.style.display = 'none';
+                                            no_pic_11_proximal.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_proximal.addEventListener('click', e=>{
+                                        input_pic_11_proximal.value = '';
+                                        yes_pic_11_proximal.style.display = 'none';
+                                        no_pic_11_proximal.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--4.proximal-->
+
+                            <div><!--5.proximal_desctiption-->
+                                <style>
+                                    #yes-pic-11-proximal_desctiption { display: none; }
+                                    #no-pic-11-proximal_desctiption { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-proximal_desctiption">✔ </label>
+                                <label class="no" id="no-pic-11-proximal_desctiption">✖ </label>
+                                <label>5 : </label>
+                                <input type="text" id="pic-11-proximal_desctiption">
+                                <button id="clear-pic-11-proximal_desctiption">清除</button>
+                                <script>
+                                    let input_pic_11_proximal_desctiption = document.getElementById('pic-11-proximal_desctiption');
+                                    let yes_pic_11_proximal_desctiption = document.getElementById('yes-pic-11-proximal_desctiption');
+                                    let no_pic_11_proximal_desctiption = document.getElementById('no-pic-11-proximal_desctiption');
+                                    let clear_pic_11_proximal_desctiption = document.getElementById('clear-pic-11-proximal_desctiption');
+                                    let pic_11_proximal_desctiption_ans_content = "closer to the origin of the body part or the point of attachment of a limb to the body trunk";
+                                    input_pic_11_proximal_desctiption.addEventListener("change", e=>{
+                                        if(input_pic_11_proximal_desctiption.value.toLowerCase() === pic_11_proximal_desctiption_ans_content) {
+                                            yes_pic_11_proximal_desctiption.style.display = 'unset';
+                                            no_pic_11_proximal_desctiption.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_proximal_desctiption.style.display = 'none';
+                                            no_pic_11_proximal_desctiption.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_proximal_desctiption.addEventListener('click', e=>{
+                                        input_pic_11_proximal_desctiption.value = '';
+                                        yes_pic_11_proximal_desctiption.style.display = 'none';
+                                        no_pic_11_proximal_desctiption.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--5.proximal_desctiption-->
+
+                            <div><!--6.proximal_example-->
+                                <style>
+                                    #yes-pic-11-proximal_example { display: none; }
+                                    #no-pic-11-proximal_example { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-proximal_example">✔ </label>
+                                <label class="no" id="no-pic-11-proximal_example">✖ </label>
+                                <label>6 : </label>
+                                <input type="text" id="pic-11-proximal_example">
+                                <button id="clear-pic-11-proximal_example">清除</button>
+                                <script>
+                                    let input_pic_11_proximal_example = document.getElementById('pic-11-proximal_example');
+                                    let yes_pic_11_proximal_example = document.getElementById('yes-pic-11-proximal_example');
+                                    let no_pic_11_proximal_example = document.getElementById('no-pic-11-proximal_example');
+                                    let clear_pic_11_proximal_example = document.getElementById('clear-pic-11-proximal_example');
+                                    let pic_11_proximal_example_ans_content = "the elbow is proximal to the wrist.";
+                                    input_pic_11_proximal_example.addEventListener("change", e=>{
+                                        if(input_pic_11_proximal_example.value.toLowerCase() === pic_11_proximal_example_ans_content) {
+                                            yes_pic_11_proximal_example.style.display = 'unset';
+                                            no_pic_11_proximal_example.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_proximal_example.style.display = 'none';
+                                            no_pic_11_proximal_example.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_proximal_example.addEventListener('click', e=>{
+                                        input_pic_11_proximal_example.value = '';
+                                        yes_pic_11_proximal_example.style.display = 'none';
+                                        no_pic_11_proximal_example.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--6.proximal_example-->
+
+                            <div><!--7.distal-->
+                                <style>
+                                    #yes-pic-11-distal { display: none; }
+                                    #no-pic-11-distal { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-distal">✔ </label>
+                                <label class="no" id="no-pic-11-distal">✖ </label>
+                                <label>7 : </label>
+                                <input type="text" id="pic-11-distal">
+                                <button id="clear-pic-11-distal">清除</button>
+                                <script>
+                                    let input_pic_11_distal = document.getElementById('pic-11-distal');
+                                    let yes_pic_11_distal = document.getElementById('yes-pic-11-distal');
+                                    let no_pic_11_distal = document.getElementById('no-pic-11-distal');
+                                    let clear_pic_11_distal = document.getElementById('clear-pic-11-distal');
+                                    let pic_11_distal_ans_content = "distal";
+                                    input_pic_11_distal.addEventListener("change", e=>{
+                                        if(input_pic_11_distal.value.toLowerCase() === pic_11_distal_ans_content) {
+                                            yes_pic_11_distal.style.display = 'unset';
+                                            no_pic_11_distal.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_distal.style.display = 'none';
+                                            no_pic_11_distal.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_distal.addEventListener('click', e=>{
+                                        input_pic_11_distal.value = '';
+                                        yes_pic_11_distal.style.display = 'none';
+                                        no_pic_11_distal.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--7.distal-->
+
+                            <div><!--8.distal_desctiption-->
+                                <style>
+                                    #yes-pic-11-distal_desctiption { display: none; }
+                                    #no-pic-11-distal_desctiption { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-distal_desctiption">✔ </label>
+                                <label class="no" id="no-pic-11-distal_desctiption">✖ </label>
+                                <label>8 : </label>
+                                <input type="text" id="pic-11-distal_desctiption">
+                                <button id="clear-pic-11-distal_desctiption">清除</button>
+                                <script>
+                                    let input_pic_11_distal_desctiption = document.getElementById('pic-11-distal_desctiption');
+                                    let yes_pic_11_distal_desctiption = document.getElementById('yes-pic-11-distal_desctiption');
+                                    let no_pic_11_distal_desctiption = document.getElementById('no-pic-11-distal_desctiption');
+                                    let clear_pic_11_distal_desctiption = document.getElementById('clear-pic-11-distal_desctiption');
+                                    let pic_11_distal_desctiption_ans_content = "farther from the origin of a body part or the point of attachment of a limb to the body trunk";
+                                    input_pic_11_distal_desctiption.addEventListener("change", e=>{
+                                        if(input_pic_11_distal_desctiption.value.toLowerCase() === pic_11_distal_desctiption_ans_content) {
+                                            yes_pic_11_distal_desctiption.style.display = 'unset';
+                                            no_pic_11_distal_desctiption.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_distal_desctiption.style.display = 'none';
+                                            no_pic_11_distal_desctiption.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_distal_desctiption.addEventListener('click', e=>{
+                                        input_pic_11_distal_desctiption.value = '';
+                                        yes_pic_11_distal_desctiption.style.display = 'none';
+                                        no_pic_11_distal_desctiption.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--8.distal_desctiption-->
+
+                            <div><!--9.distal_example-->
+                                <style>
+                                    #yes-pic-11-distal_example { display: none; }
+                                    #no-pic-11-distal_example { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-distal_example">✔ </label>
+                                <label class="no" id="no-pic-11-distal_example">✖ </label>
+                                <label>9 : </label>
+                                <input type="text" id="pic-11-distal_example">
+                                <button id="clear-pic-11-distal_example">清除</button>
+                                <script>
+                                    let input_pic_11_distal_example = document.getElementById('pic-11-distal_example');
+                                    let yes_pic_11_distal_example = document.getElementById('yes-pic-11-distal_example');
+                                    let no_pic_11_distal_example = document.getElementById('no-pic-11-distal_example');
+                                    let clear_pic_11_distal_example = document.getElementById('clear-pic-11-distal_example');
+                                    let pic_11_distal_example_ans_content = "the knee is distal to the thigh.";
+                                    input_pic_11_distal_example.addEventListener("change", e=>{
+                                        if(input_pic_11_distal_example.value.toLowerCase() === pic_11_distal_example_ans_content) {
+                                            yes_pic_11_distal_example.style.display = 'unset';
+                                            no_pic_11_distal_example.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_distal_example.style.display = 'none';
+                                            no_pic_11_distal_example.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_distal_example.addEventListener('click', e=>{
+                                        input_pic_11_distal_example.value = '';
+                                        yes_pic_11_distal_example.style.display = 'none';
+                                        no_pic_11_distal_example.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--9.distal_example-->
+
+                            <div><!--10.superficial-->
+                                <style>
+                                    #yes-pic-11-superficial { display: none; }
+                                    #no-pic-11-superficial { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-superficial">✔ </label>
+                                <label class="no" id="no-pic-11-superficial">✖ </label>
+                                <label>10 : </label>
+                                <input type="text" id="pic-11-superficial">
+                                <button id="clear-pic-11-superficial">清除</button>
+                                <script>
+                                    let input_pic_11_superficial = document.getElementById('pic-11-superficial');
+                                    let yes_pic_11_superficial = document.getElementById('yes-pic-11-superficial');
+                                    let no_pic_11_superficial = document.getElementById('no-pic-11-superficial');
+                                    let clear_pic_11_superficial = document.getElementById('clear-pic-11-superficial');
+                                    let pic_11_superficial_ans_content = "superficial(external)";
+                                    input_pic_11_superficial.addEventListener("change", e=>{
+                                        if(input_pic_11_superficial.value.toLowerCase() === pic_11_superficial_ans_content) {
+                                            yes_pic_11_superficial.style.display = 'unset';
+                                            no_pic_11_superficial.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_superficial.style.display = 'none';
+                                            no_pic_11_superficial.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_superficial.addEventListener('click', e=>{
+                                        input_pic_11_superficial.value = '';
+                                        yes_pic_11_superficial.style.display = 'none';
+                                        no_pic_11_superficial.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--10.superficial-->
+
+                            <div><!--11.superficial_desctiption-->
+                                <style>
+                                    #yes-pic-11-superficial_desctiption { display: none; }
+                                    #no-pic-11-superficial_desctiption { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-superficial_desctiption">✔ </label>
+                                <label class="no" id="no-pic-11-superficial_desctiption">✖ </label>
+                                <label>11 : </label>
+                                <input type="text" id="pic-11-superficial_desctiption">
+                                <button id="clear-pic-11-superficial_desctiption">清除</button>
+                                <script>
+                                    let input_pic_11_superficial_desctiption = document.getElementById('pic-11-superficial_desctiption');
+                                    let yes_pic_11_superficial_desctiption = document.getElementById('yes-pic-11-superficial_desctiption');
+                                    let no_pic_11_superficial_desctiption = document.getElementById('no-pic-11-superficial_desctiption');
+                                    let clear_pic_11_superficial_desctiption = document.getElementById('clear-pic-11-superficial_desctiption');
+                                    let pic_11_superficial_desctiption_ans_content = "toward or at the body surface";
+                                    input_pic_11_superficial_desctiption.addEventListener("change", e=>{
+                                        if(input_pic_11_superficial_desctiption.value.toLowerCase() === pic_11_superficial_desctiption_ans_content) {
+                                            yes_pic_11_superficial_desctiption.style.display = 'unset';
+                                            no_pic_11_superficial_desctiption.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_superficial_desctiption.style.display = 'none';
+                                            no_pic_11_superficial_desctiption.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_superficial_desctiption.addEventListener('click', e=>{
+                                        input_pic_11_superficial_desctiption.value = '';
+                                        yes_pic_11_superficial_desctiption.style.display = 'none';
+                                        no_pic_11_superficial_desctiption.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--11.superficial_desctiption-->
+
+                            <div><!--12.superficial_example-->
+                                <style>
+                                    #yes-pic-11-superficial_example { display: none; }
+                                    #no-pic-11-superficial_example { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-superficial_example">✔ </label>
+                                <label class="no" id="no-pic-11-superficial_example">✖ </label>
+                                <label>12 : </label>
+                                <input type="text" id="pic-11-superficial_example">
+                                <button id="clear-pic-11-superficial_example">清除</button>
+                                <script>
+                                    let input_pic_11_superficial_example = document.getElementById('pic-11-superficial_example');
+                                    let yes_pic_11_superficial_example = document.getElementById('yes-pic-11-superficial_example');
+                                    let no_pic_11_superficial_example = document.getElementById('no-pic-11-superficial_example');
+                                    let clear_pic_11_superficial_example = document.getElementById('clear-pic-11-superficial_example');
+                                    let pic_11_superficial_example_ans_content = "the skin is superficial to the skeletal muscles.";
+                                    input_pic_11_superficial_example.addEventListener("change", e=>{
+                                        if(input_pic_11_superficial_example.value.toLowerCase() === pic_11_superficial_example_ans_content) {
+                                            yes_pic_11_superficial_example.style.display = 'unset';
+                                            no_pic_11_superficial_example.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_superficial_example.style.display = 'none';
+                                            no_pic_11_superficial_example.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_superficial_example.addEventListener('click', e=>{
+                                        input_pic_11_superficial_example.value = '';
+                                        yes_pic_11_superficial_example.style.display = 'none';
+                                        no_pic_11_superficial_example.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--12.superficial_example-->
+
+                            <div><!--13.deep-->
+                                <style>
+                                    #yes-pic-11-deep { display: none; }
+                                    #no-pic-11-deep { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-deep">✔ </label>
+                                <label class="no" id="no-pic-11-deep">✖ </label>
+                                <label>13 : </label>
+                                <input type="text" id="pic-11-deep">
+                                <button id="clear-pic-11-deep">清除</button>
+                                <script>
+                                    let input_pic_11_deep = document.getElementById('pic-11-deep');
+                                    let yes_pic_11_deep = document.getElementById('yes-pic-11-deep');
+                                    let no_pic_11_deep = document.getElementById('no-pic-11-deep');
+                                    let clear_pic_11_deep = document.getElementById('clear-pic-11-deep');
+                                    let pic_11_deep_ans_content = "deep(internal)";
+                                    input_pic_11_deep.addEventListener("change", e=>{
+                                        if(input_pic_11_deep.value.toLowerCase() === pic_11_deep_ans_content) {
+                                            yes_pic_11_deep.style.display = 'unset';
+                                            no_pic_11_deep.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_deep.style.display = 'none';
+                                            no_pic_11_deep.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_deep.addEventListener('click', e=>{
+                                        input_pic_11_deep.value = '';
+                                        yes_pic_11_deep.style.display = 'none';
+                                        no_pic_11_deep.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--13.deep-->
+
+                            <div><!--14.deep_desctiption-->
+                                <style>
+                                    #yes-pic-11-deep_desctiption { display: none; }
+                                    #no-pic-11-deep_desctiption { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-deep_desctiption">✔ </label>
+                                <label class="no" id="no-pic-11-deep_desctiption">✖ </label>
+                                <label>14 : </label>
+                                <input type="text" id="pic-11-deep_desctiption">
+                                <button id="clear-pic-11-deep_desctiption">清除</button>
+                                <script>
+                                    let input_pic_11_deep_desctiption = document.getElementById('pic-11-deep_desctiption');
+                                    let yes_pic_11_deep_desctiption = document.getElementById('yes-pic-11-deep_desctiption');
+                                    let no_pic_11_deep_desctiption = document.getElementById('no-pic-11-deep_desctiption');
+                                    let clear_pic_11_deep_desctiption = document.getElementById('clear-pic-11-deep_desctiption');
+                                    let pic_11_deep_desctiption_ans_content = "away from the body surface; more internal";
+                                    input_pic_11_deep_desctiption.addEventListener("change", e=>{
+                                        if(input_pic_11_deep_desctiption.value.toLowerCase() === pic_11_deep_desctiption_ans_content) {
+                                            yes_pic_11_deep_desctiption.style.display = 'unset';
+                                            no_pic_11_deep_desctiption.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_deep_desctiption.style.display = 'none';
+                                            no_pic_11_deep_desctiption.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_deep_desctiption.addEventListener('click', e=>{
+                                        input_pic_11_deep_desctiption.value = '';
+                                        yes_pic_11_deep_desctiption.style.display = 'none';
+                                        no_pic_11_deep_desctiption.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--14.deep_desctiption-->
+
+                            <div><!--15.deep_example-->
+                                <style>
+                                    #yes-pic-11-deep_example { display: none; }
+                                    #no-pic-11-deep_example { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-11-deep_example">✔ </label>
+                                <label class="no" id="no-pic-11-deep_example">✖ </label>
+                                <label>15 : </label>
+                                <input type="text" id="pic-11-deep_example">
+                                <button id="clear-pic-11-deep_example">清除</button>
+                                <script>
+                                    let input_pic_11_deep_example = document.getElementById('pic-11-deep_example');
+                                    let yes_pic_11_deep_example = document.getElementById('yes-pic-11-deep_example');
+                                    let no_pic_11_deep_example = document.getElementById('no-pic-11-deep_example');
+                                    let clear_pic_11_deep_example = document.getElementById('clear-pic-11-deep_example');
+                                    let pic_11_deep_example_ans_content = "the lungs are deep to the skin.";
+                                    input_pic_11_deep_example.addEventListener("change", e=>{
+                                        if(input_pic_11_deep_example.value.toLowerCase() === pic_11_deep_example_ans_content) {
+                                            yes_pic_11_deep_example.style.display = 'unset';
+                                            no_pic_11_deep_example.style.display = 'none';
+                                        }else {
+                                            yes_pic_11_deep_example.style.display = 'none';
+                                            no_pic_11_deep_example.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_11_deep_example.addEventListener('click', e=>{
+                                        input_pic_11_deep_example.value = '';
+                                        yes_pic_11_deep_example.style.display = 'none';
+                                        no_pic_11_deep_example.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--15.deep_example-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--圖片題11--><!--人體方位02-->
+
             <script>
                 let questions = document.getElementsByClassName('question');
                 for(let i = 0; i < questions.length; i++) {
