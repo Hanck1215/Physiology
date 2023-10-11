@@ -10715,6 +10715,702 @@
                 </div>
             </div><!--圖片題11--><!--人體方位02-->
 
+            <div class="question"><!--圖片題12--><!--斷面-->
+                <div class="question-content">
+                    <img id="pic_12_imgsrc" src="https://raw.githubusercontent.com/Hanck1215/Physiology/main/plane_que.png">
+                    <style>
+                        #pic_12_imgsrc {
+                            width: 1000px;
+                        }
+                        .pic-questions-plane {
+                            display: block;
+                            margin-top: 6%;
+                            margin-bottom: 50px;
+                            width: 1200px;
+                        }
+                        .pic-questions-plane button {
+                            font-size: 1rem;
+                            color: rgb(72, 57, 46);
+                            border: 2px rgba(68, 51, 34, 0.75) solid;
+                            border-radius: 20px;
+                            padding: 3px 12px;
+                            background-color: rgb(255, 246, 218);
+                            margin-top: 12px;
+                        }
+                        .pic-questions-plane button:hover {
+                            background-color: rgb(216, 206, 177);
+                        }
+                        .pic-questions-plane button:active {
+                            background-color: rgb(237, 226, 194);
+                        }
+                        .pic-questions-plane input[type="text"] {
+                            width: 500px;
+                        }
+                    </style>
+                    <div>
+                        <button class="pic-ans-btn" id="pic-12-ans-btn">看答案</button>
+                    </div>
+                    <script>
+                        let pic_12_imgsrc_q = true;
+                        let pic_12_ans_btn = document.getElementById('pic-12-ans-btn');
+                        pic_12_ans_btn.addEventListener('click', e=>{
+                            let pic_12_imgsrc = document.getElementById('pic_12_imgsrc');
+                            console.log(pic_12_imgsrc.src);
+                            if(pic_12_imgsrc_q) {
+                                pic_12_ans_btn.textContent = '隱藏答案';
+                                pic_12_imgsrc_q = !pic_12_imgsrc_q;
+                                pic_12_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/plane_ans.png';
+                            }else if(!pic_12_imgsrc_q) {
+                                pic_12_ans_btn.textContent = '看答案';
+                                pic_12_imgsrc_q = !pic_12_imgsrc_q;
+                                pic_12_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/plane_que.png';
+                            }
+                        });
+                    </script>
+    
+                    <div class="pic-questions-wrapper">
+                        <div class="pic-questions-plane">
+                            <div><!--1.median_plane-->
+                                <style>
+                                    #yes-pic-12-median_plane { display: none; }
+                                    #no-pic-12-median_plane { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-12-median_plane">✔ </label>
+                                <label class="no" id="no-pic-12-median_plane">✖ </label>
+                                <label>1 : </label>
+                                <input type="text" id="pic-12-median_plane">
+                                <button id="clear-pic-12-median_plane">清除</button>
+                                <script>
+                                    let input_pic_12_median_plane = document.getElementById('pic-12-median_plane');
+                                    let yes_pic_12_median_plane = document.getElementById('yes-pic-12-median_plane');
+                                    let no_pic_12_median_plane = document.getElementById('no-pic-12-median_plane');
+                                    let clear_pic_12_median_plane = document.getElementById('clear-pic-12-median_plane');
+                                    let pic_12_median_plane_ans_content = "median(midsagittal) plane";
+                                    input_pic_12_median_plane.addEventListener("change", e=>{
+                                        if(input_pic_12_median_plane.value.toLowerCase() === pic_12_median_plane_ans_content) {
+                                            yes_pic_12_median_plane.style.display = 'unset';
+                                            no_pic_12_median_plane.style.display = 'none';
+                                        }else {
+                                            yes_pic_12_median_plane.style.display = 'none';
+                                            no_pic_12_median_plane.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_12_median_plane.addEventListener('click', e=>{
+                                        input_pic_12_median_plane.value = '';
+                                        yes_pic_12_median_plane.style.display = 'none';
+                                        no_pic_12_median_plane.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--1.median_plane-->
+
+                            <div><!--2.frontal_plane-->
+                                <style>
+                                    #yes-pic-12-frontal_plane { display: none; }
+                                    #no-pic-12-frontal_plane { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-12-frontal_plane">✔ </label>
+                                <label class="no" id="no-pic-12-frontal_plane">✖ </label>
+                                <label>2 : </label>
+                                <input type="text" id="pic-12-frontal_plane">
+                                <button id="clear-pic-12-frontal_plane">清除</button>
+                                <script>
+                                    let input_pic_12_frontal_plane = document.getElementById('pic-12-frontal_plane');
+                                    let yes_pic_12_frontal_plane = document.getElementById('yes-pic-12-frontal_plane');
+                                    let no_pic_12_frontal_plane = document.getElementById('no-pic-12-frontal_plane');
+                                    let clear_pic_12_frontal_plane = document.getElementById('clear-pic-12-frontal_plane');
+                                    let pic_12_frontal_plane_ans_content = "frontal(coronal) plane";
+                                    input_pic_12_frontal_plane.addEventListener("change", e=>{
+                                        if(input_pic_12_frontal_plane.value.toLowerCase() === pic_12_frontal_plane_ans_content) {
+                                            yes_pic_12_frontal_plane.style.display = 'unset';
+                                            no_pic_12_frontal_plane.style.display = 'none';
+                                        }else {
+                                            yes_pic_12_frontal_plane.style.display = 'none';
+                                            no_pic_12_frontal_plane.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_12_frontal_plane.addEventListener('click', e=>{
+                                        input_pic_12_frontal_plane.value = '';
+                                        yes_pic_12_frontal_plane.style.display = 'none';
+                                        no_pic_12_frontal_plane.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--2.frontal_plane-->
+
+                            <div><!--3.transverse_plane-->
+                                <style>
+                                    #yes-pic-12-transverse_plane { display: none; }
+                                    #no-pic-12-transverse_plane { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-12-transverse_plane">✔ </label>
+                                <label class="no" id="no-pic-12-transverse_plane">✖ </label>
+                                <label>3 : </label>
+                                <input type="text" id="pic-12-transverse_plane">
+                                <button id="clear-pic-12-transverse_plane">清除</button>
+                                <script>
+                                    let input_pic_12_transverse_plane = document.getElementById('pic-12-transverse_plane');
+                                    let yes_pic_12_transverse_plane = document.getElementById('yes-pic-12-transverse_plane');
+                                    let no_pic_12_transverse_plane = document.getElementById('no-pic-12-transverse_plane');
+                                    let clear_pic_12_transverse_plane = document.getElementById('clear-pic-12-transverse_plane');
+                                    let pic_12_transverse_plane_ans_content = "transverse plane";
+                                    input_pic_12_transverse_plane.addEventListener("change", e=>{
+                                        if(input_pic_12_transverse_plane.value.toLowerCase() === pic_12_transverse_plane_ans_content) {
+                                            yes_pic_12_transverse_plane.style.display = 'unset';
+                                            no_pic_12_transverse_plane.style.display = 'none';
+                                        }else {
+                                            yes_pic_12_transverse_plane.style.display = 'none';
+                                            no_pic_12_transverse_plane.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_12_transverse_plane.addEventListener('click', e=>{
+                                        input_pic_12_transverse_plane.value = '';
+                                        yes_pic_12_transverse_plane.style.display = 'none';
+                                        no_pic_12_transverse_plane.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--3.transverse_plane-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--圖片題12--><!--斷面-->
+
+            <div class="question"><!--圖片題13--><!--體腔-->
+                <div class="question-content">
+                    <img id="pic_13_imgsrc" src="https://raw.githubusercontent.com/Hanck1215/Physiology/main/cavity_que.png">
+                    <style>
+                        #pic_13_imgsrc {
+                            width: 1000px;
+                        }
+                        .pic-questions-cavity {
+                            display: block;
+                            margin-top: 6%;
+                            margin-bottom: 50px;
+                            width: 1200px;
+                        }
+                        .pic-questions-cavity button {
+                            font-size: 1rem;
+                            color: rgb(72, 57, 46);
+                            border: 2px rgba(68, 51, 34, 0.75) solid;
+                            border-radius: 20px;
+                            padding: 3px 12px;
+                            background-color: rgb(255, 246, 218);
+                            margin-top: 12px;
+                        }
+                        .pic-questions-cavity button:hover {
+                            background-color: rgb(216, 206, 177);
+                        }
+                        .pic-questions-cavity button:active {
+                            background-color: rgb(237, 226, 194);
+                        }
+                        .pic-questions-cavity input[type="text"] {
+                            width: 900px;
+                        }
+                    </style>
+                    <div>
+                        <button class="pic-ans-btn" id="pic-13-ans-btn">看答案</button>
+                    </div>
+                    <script>
+                        let pic_13_imgsrc_q = true;
+                        let pic_13_ans_btn = document.getElementById('pic-13-ans-btn');
+                        pic_13_ans_btn.addEventListener('click', e=>{
+                            let pic_13_imgsrc = document.getElementById('pic_13_imgsrc');
+                            console.log(pic_13_imgsrc.src);
+                            if(pic_13_imgsrc_q) {
+                                pic_13_ans_btn.textContent = '隱藏答案';
+                                pic_13_imgsrc_q = !pic_13_imgsrc_q;
+                                pic_13_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/cavity_ans.png';
+                            }else if(!pic_13_imgsrc_q) {
+                                pic_13_ans_btn.textContent = '看答案';
+                                pic_13_imgsrc_q = !pic_13_imgsrc_q;
+                                pic_13_imgsrc.src = 'https://raw.githubusercontent.com/Hanck1215/Physiology/main/cavity_que.png';
+                            }
+                        });
+                    </script>
+    
+                    <div class="pic-questions-wrapper">
+                        <div class="pic-questions-cavity">
+                            <div><!--1.cranial_cavity-->
+                                <style>
+                                    #yes-pic-13-cranial_cavity { display: none; }
+                                    #no-pic-13-cranial_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-cranial_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-cranial_cavity">✖ </label>
+                                <label>1 : </label>
+                                <input type="text" id="pic-13-cranial_cavity">
+                                <button id="clear-pic-13-cranial_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_cranial_cavity = document.getElementById('pic-13-cranial_cavity');
+                                    let yes_pic_13_cranial_cavity = document.getElementById('yes-pic-13-cranial_cavity');
+                                    let no_pic_13_cranial_cavity = document.getElementById('no-pic-13-cranial_cavity');
+                                    let clear_pic_13_cranial_cavity = document.getElementById('clear-pic-13-cranial_cavity');
+                                    let pic_13_cranial_cavity_ans_content = "cranial cavity(contains brain)";
+                                    input_pic_13_cranial_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_cranial_cavity.value.toLowerCase() === pic_13_cranial_cavity_ans_content) {
+                                            yes_pic_13_cranial_cavity.style.display = 'unset';
+                                            no_pic_13_cranial_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_cranial_cavity.style.display = 'none';
+                                            no_pic_13_cranial_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_cranial_cavity.addEventListener('click', e=>{
+                                        input_pic_13_cranial_cavity.value = '';
+                                        yes_pic_13_cranial_cavity.style.display = 'none';
+                                        no_pic_13_cranial_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--1.cranial_cavity-->
+
+                            <div><!--2.dorsal_body_cavity-->
+                                <style>
+                                    #yes-pic-13-dorsal_body_cavity { display: none; }
+                                    #no-pic-13-dorsal_body_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-dorsal_body_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-dorsal_body_cavity">✖ </label>
+                                <label>2 : </label>
+                                <input type="text" id="pic-13-dorsal_body_cavity">
+                                <button id="clear-pic-13-dorsal_body_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_dorsal_body_cavity = document.getElementById('pic-13-dorsal_body_cavity');
+                                    let yes_pic_13_dorsal_body_cavity = document.getElementById('yes-pic-13-dorsal_body_cavity');
+                                    let no_pic_13_dorsal_body_cavity = document.getElementById('no-pic-13-dorsal_body_cavity');
+                                    let clear_pic_13_dorsal_body_cavity = document.getElementById('clear-pic-13-dorsal_body_cavity');
+                                    let pic_13_dorsal_body_cavity_ans_content = "dorsal body cavity";
+                                    input_pic_13_dorsal_body_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_dorsal_body_cavity.value.toLowerCase() === pic_13_dorsal_body_cavity_ans_content) {
+                                            yes_pic_13_dorsal_body_cavity.style.display = 'unset';
+                                            no_pic_13_dorsal_body_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_dorsal_body_cavity.style.display = 'none';
+                                            no_pic_13_dorsal_body_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_dorsal_body_cavity.addEventListener('click', e=>{
+                                        input_pic_13_dorsal_body_cavity.value = '';
+                                        yes_pic_13_dorsal_body_cavity.style.display = 'none';
+                                        no_pic_13_dorsal_body_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--2.dorsal_body_cavity-->
+
+                            <div><!--3.vertebral_cavity-->
+                                <style>
+                                    #yes-pic-13-vertebral_cavity { display: none; }
+                                    #no-pic-13-vertebral_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-vertebral_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-vertebral_cavity">✖ </label>
+                                <label>3 : </label>
+                                <input type="text" id="pic-13-vertebral_cavity">
+                                <button id="clear-pic-13-vertebral_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_vertebral_cavity = document.getElementById('pic-13-vertebral_cavity');
+                                    let yes_pic_13_vertebral_cavity = document.getElementById('yes-pic-13-vertebral_cavity');
+                                    let no_pic_13_vertebral_cavity = document.getElementById('no-pic-13-vertebral_cavity');
+                                    let clear_pic_13_vertebral_cavity = document.getElementById('clear-pic-13-vertebral_cavity');
+                                    let pic_13_vertebral_cavity_ans_content = "vertebral cavity(contains spinal cord)";
+                                    input_pic_13_vertebral_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_vertebral_cavity.value.toLowerCase() === pic_13_vertebral_cavity_ans_content) {
+                                            yes_pic_13_vertebral_cavity.style.display = 'unset';
+                                            no_pic_13_vertebral_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_vertebral_cavity.style.display = 'none';
+                                            no_pic_13_vertebral_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_vertebral_cavity.addEventListener('click', e=>{
+                                        input_pic_13_vertebral_cavity.value = '';
+                                        yes_pic_13_vertebral_cavity.style.display = 'none';
+                                        no_pic_13_vertebral_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--3.vertebral_cavity-->
+
+                            <div><!--4.thoracic_cavity-->
+                                <style>
+                                    #yes-pic-13-thoracic_cavity { display: none; }
+                                    #no-pic-13-thoracic_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-thoracic_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-thoracic_cavity">✖ </label>
+                                <label>4 : </label>
+                                <input type="text" id="pic-13-thoracic_cavity">
+                                <button id="clear-pic-13-thoracic_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_thoracic_cavity = document.getElementById('pic-13-thoracic_cavity');
+                                    let yes_pic_13_thoracic_cavity = document.getElementById('yes-pic-13-thoracic_cavity');
+                                    let no_pic_13_thoracic_cavity = document.getElementById('no-pic-13-thoracic_cavity');
+                                    let clear_pic_13_thoracic_cavity = document.getElementById('clear-pic-13-thoracic_cavity');
+                                    let pic_13_thoracic_cavity_ans_content = "thoracic cavity(contains heart and lungs)";
+                                    input_pic_13_thoracic_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_thoracic_cavity.value.toLowerCase() === pic_13_thoracic_cavity_ans_content) {
+                                            yes_pic_13_thoracic_cavity.style.display = 'unset';
+                                            no_pic_13_thoracic_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_thoracic_cavity.style.display = 'none';
+                                            no_pic_13_thoracic_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_thoracic_cavity.addEventListener('click', e=>{
+                                        input_pic_13_thoracic_cavity.value = '';
+                                        yes_pic_13_thoracic_cavity.style.display = 'none';
+                                        no_pic_13_thoracic_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--4.thoracic_cavity-->
+
+                            <div><!--5.cranial_cavity_02-->
+                                <style>
+                                    #yes-pic-13-cranial_cavity_02 { display: none; }
+                                    #no-pic-13-cranial_cavity_02 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-cranial_cavity_02">✔ </label>
+                                <label class="no" id="no-pic-13-cranial_cavity_02">✖ </label>
+                                <label>5 : </label>
+                                <input type="text" id="pic-13-cranial_cavity_02">
+                                <button id="clear-pic-13-cranial_cavity_02">清除</button>
+                                <script>
+                                    let input_pic_13_cranial_cavity_02 = document.getElementById('pic-13-cranial_cavity_02');
+                                    let yes_pic_13_cranial_cavity_02 = document.getElementById('yes-pic-13-cranial_cavity_02');
+                                    let no_pic_13_cranial_cavity_02 = document.getElementById('no-pic-13-cranial_cavity_02');
+                                    let clear_pic_13_cranial_cavity_02 = document.getElementById('clear-pic-13-cranial_cavity_02');
+                                    let pic_13_cranial_cavity_02_ans_content = "cranial cavity";
+                                    input_pic_13_cranial_cavity_02.addEventListener("change", e=>{
+                                        if(input_pic_13_cranial_cavity_02.value.toLowerCase() === pic_13_cranial_cavity_02_ans_content) {
+                                            yes_pic_13_cranial_cavity_02.style.display = 'unset';
+                                            no_pic_13_cranial_cavity_02.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_cranial_cavity_02.style.display = 'none';
+                                            no_pic_13_cranial_cavity_02.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_cranial_cavity_02.addEventListener('click', e=>{
+                                        input_pic_13_cranial_cavity_02.value = '';
+                                        yes_pic_13_cranial_cavity_02.style.display = 'none';
+                                        no_pic_13_cranial_cavity_02.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--5.cranial_cavity_02-->
+
+                            <div><!--6.vertebral_cavity_02-->
+                                <style>
+                                    #yes-pic-13-vertebral_cavity_02 { display: none; }
+                                    #no-pic-13-vertebral_cavity_02 { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-vertebral_cavity_02">✔ </label>
+                                <label class="no" id="no-pic-13-vertebral_cavity_02">✖ </label>
+                                <label>6 : </label>
+                                <input type="text" id="pic-13-vertebral_cavity_02">
+                                <button id="clear-pic-13-vertebral_cavity_02">清除</button>
+                                <script>
+                                    let input_pic_13_vertebral_cavity_02 = document.getElementById('pic-13-vertebral_cavity_02');
+                                    let yes_pic_13_vertebral_cavity_02 = document.getElementById('yes-pic-13-vertebral_cavity_02');
+                                    let no_pic_13_vertebral_cavity_02 = document.getElementById('no-pic-13-vertebral_cavity_02');
+                                    let clear_pic_13_vertebral_cavity_02 = document.getElementById('clear-pic-13-vertebral_cavity_02');
+                                    let pic_13_vertebral_cavity_02_ans_content = "vertebral cavity";
+                                    input_pic_13_vertebral_cavity_02.addEventListener("change", e=>{
+                                        if(input_pic_13_vertebral_cavity_02.value.toLowerCase() === pic_13_vertebral_cavity_02_ans_content) {
+                                            yes_pic_13_vertebral_cavity_02.style.display = 'unset';
+                                            no_pic_13_vertebral_cavity_02.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_vertebral_cavity_02.style.display = 'none';
+                                            no_pic_13_vertebral_cavity_02.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_vertebral_cavity_02.addEventListener('click', e=>{
+                                        input_pic_13_vertebral_cavity_02.value = '';
+                                        yes_pic_13_vertebral_cavity_02.style.display = 'none';
+                                        no_pic_13_vertebral_cavity_02.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--6.vertebral_cavity_02-->
+
+                            <div><!--7.superior_mediastinum-->
+                                <style>
+                                    #yes-pic-13-superior_mediastinum { display: none; }
+                                    #no-pic-13-superior_mediastinum { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-superior_mediastinum">✔ </label>
+                                <label class="no" id="no-pic-13-superior_mediastinum">✖ </label>
+                                <label>7 : </label>
+                                <input type="text" id="pic-13-superior_mediastinum">
+                                <button id="clear-pic-13-superior_mediastinum">清除</button>
+                                <script>
+                                    let input_pic_13_superior_mediastinum = document.getElementById('pic-13-superior_mediastinum');
+                                    let yes_pic_13_superior_mediastinum = document.getElementById('yes-pic-13-superior_mediastinum');
+                                    let no_pic_13_superior_mediastinum = document.getElementById('no-pic-13-superior_mediastinum');
+                                    let clear_pic_13_superior_mediastinum = document.getElementById('clear-pic-13-superior_mediastinum');
+                                    let pic_13_superior_mediastinum_ans_content = "superior mediastinum";
+                                    input_pic_13_superior_mediastinum.addEventListener("change", e=>{
+                                        if(input_pic_13_superior_mediastinum.value.toLowerCase() === pic_13_superior_mediastinum_ans_content) {
+                                            yes_pic_13_superior_mediastinum.style.display = 'unset';
+                                            no_pic_13_superior_mediastinum.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_superior_mediastinum.style.display = 'none';
+                                            no_pic_13_superior_mediastinum.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_superior_mediastinum.addEventListener('click', e=>{
+                                        input_pic_13_superior_mediastinum.value = '';
+                                        yes_pic_13_superior_mediastinum.style.display = 'none';
+                                        no_pic_13_superior_mediastinum.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--7.superior_mediastinum-->
+
+                            <div><!--8.pleural_cavity-->
+                                <style>
+                                    #yes-pic-13-pleural_cavity { display: none; }
+                                    #no-pic-13-pleural_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-pleural_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-pleural_cavity">✖ </label>
+                                <label>8 : </label>
+                                <input type="text" id="pic-13-pleural_cavity">
+                                <button id="clear-pic-13-pleural_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_pleural_cavity = document.getElementById('pic-13-pleural_cavity');
+                                    let yes_pic_13_pleural_cavity = document.getElementById('yes-pic-13-pleural_cavity');
+                                    let no_pic_13_pleural_cavity = document.getElementById('no-pic-13-pleural_cavity');
+                                    let clear_pic_13_pleural_cavity = document.getElementById('clear-pic-13-pleural_cavity');
+                                    let pic_13_pleural_cavity_ans_content = "pleural cavity";
+                                    input_pic_13_pleural_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_pleural_cavity.value.toLowerCase() === pic_13_pleural_cavity_ans_content) {
+                                            yes_pic_13_pleural_cavity.style.display = 'unset';
+                                            no_pic_13_pleural_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_pleural_cavity.style.display = 'none';
+                                            no_pic_13_pleural_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_pleural_cavity.addEventListener('click', e=>{
+                                        input_pic_13_pleural_cavity.value = '';
+                                        yes_pic_13_pleural_cavity.style.display = 'none';
+                                        no_pic_13_pleural_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--8.pleural_cavity-->
+
+                            <div><!--9.pericardial_cavity-->
+                                <style>
+                                    #yes-pic-13-pericardial_cavity { display: none; }
+                                    #no-pic-13-pericardial_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-pericardial_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-pericardial_cavity">✖ </label>
+                                <label>9 : </label>
+                                <input type="text" id="pic-13-pericardial_cavity">
+                                <button id="clear-pic-13-pericardial_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_pericardial_cavity = document.getElementById('pic-13-pericardial_cavity');
+                                    let yes_pic_13_pericardial_cavity = document.getElementById('yes-pic-13-pericardial_cavity');
+                                    let no_pic_13_pericardial_cavity = document.getElementById('no-pic-13-pericardial_cavity');
+                                    let clear_pic_13_pericardial_cavity = document.getElementById('clear-pic-13-pericardial_cavity');
+                                    let pic_13_pericardial_cavity_ans_content = "pericardial cavity within the mediastinum";
+                                    input_pic_13_pericardial_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_pericardial_cavity.value.toLowerCase() === pic_13_pericardial_cavity_ans_content) {
+                                            yes_pic_13_pericardial_cavity.style.display = 'unset';
+                                            no_pic_13_pericardial_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_pericardial_cavity.style.display = 'none';
+                                            no_pic_13_pericardial_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_pericardial_cavity.addEventListener('click', e=>{
+                                        input_pic_13_pericardial_cavity.value = '';
+                                        yes_pic_13_pericardial_cavity.style.display = 'none';
+                                        no_pic_13_pericardial_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--9.pericardial_cavity-->
+
+                            <div><!--10.diaphragm-->
+                                <style>
+                                    #yes-pic-13-diaphragm { display: none; }
+                                    #no-pic-13-diaphragm { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-diaphragm">✔ </label>
+                                <label class="no" id="no-pic-13-diaphragm">✖ </label>
+                                <label>10 : </label>
+                                <input type="text" id="pic-13-diaphragm">
+                                <button id="clear-pic-13-diaphragm">清除</button>
+                                <script>
+                                    let input_pic_13_diaphragm = document.getElementById('pic-13-diaphragm');
+                                    let yes_pic_13_diaphragm = document.getElementById('yes-pic-13-diaphragm');
+                                    let no_pic_13_diaphragm = document.getElementById('no-pic-13-diaphragm');
+                                    let clear_pic_13_diaphragm = document.getElementById('clear-pic-13-diaphragm');
+                                    let pic_13_diaphragm_ans_content = "diaphragm";
+                                    input_pic_13_diaphragm.addEventListener("change", e=>{
+                                        if(input_pic_13_diaphragm.value.toLowerCase() === pic_13_diaphragm_ans_content) {
+                                            yes_pic_13_diaphragm.style.display = 'unset';
+                                            no_pic_13_diaphragm.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_diaphragm.style.display = 'none';
+                                            no_pic_13_diaphragm.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_diaphragm.addEventListener('click', e=>{
+                                        input_pic_13_diaphragm.value = '';
+                                        yes_pic_13_diaphragm.style.display = 'none';
+                                        no_pic_13_diaphragm.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--10.diaphragm-->
+
+                            <div><!--11.abdominal_cavity-->
+                                <style>
+                                    #yes-pic-13-abdominal_cavity { display: none; }
+                                    #no-pic-13-abdominal_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-abdominal_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-abdominal_cavity">✖ </label>
+                                <label>11 : </label>
+                                <input type="text" id="pic-13-abdominal_cavity">
+                                <button id="clear-pic-13-abdominal_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_abdominal_cavity = document.getElementById('pic-13-abdominal_cavity');
+                                    let yes_pic_13_abdominal_cavity = document.getElementById('yes-pic-13-abdominal_cavity');
+                                    let no_pic_13_abdominal_cavity = document.getElementById('no-pic-13-abdominal_cavity');
+                                    let clear_pic_13_abdominal_cavity = document.getElementById('clear-pic-13-abdominal_cavity');
+                                    let pic_13_abdominal_cavity_ans_content = "abdominal cavity(contains digestive viscera)";
+                                    input_pic_13_abdominal_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_abdominal_cavity.value.toLowerCase() === pic_13_abdominal_cavity_ans_content) {
+                                            yes_pic_13_abdominal_cavity.style.display = 'unset';
+                                            no_pic_13_abdominal_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_abdominal_cavity.style.display = 'none';
+                                            no_pic_13_abdominal_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_abdominal_cavity.addEventListener('click', e=>{
+                                        input_pic_13_abdominal_cavity.value = '';
+                                        yes_pic_13_abdominal_cavity.style.display = 'none';
+                                        no_pic_13_abdominal_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--11.abdominal_cavity-->
+
+                            <div><!--12.pelvic_cavity-->
+                                <style>
+                                    #yes-pic-13-pelvic_cavity { display: none; }
+                                    #no-pic-13-pelvic_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-pelvic_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-pelvic_cavity">✖ </label>
+                                <label>12 : </label>
+                                <input type="text" id="pic-13-pelvic_cavity">
+                                <button id="clear-pic-13-pelvic_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_pelvic_cavity = document.getElementById('pic-13-pelvic_cavity');
+                                    let yes_pic_13_pelvic_cavity = document.getElementById('yes-pic-13-pelvic_cavity');
+                                    let no_pic_13_pelvic_cavity = document.getElementById('no-pic-13-pelvic_cavity');
+                                    let clear_pic_13_pelvic_cavity = document.getElementById('clear-pic-13-pelvic_cavity');
+                                    let pic_13_pelvic_cavity_ans_content = "pelvic cavity(contains urinary bladder, reproductive organs, and rectum)";
+                                    input_pic_13_pelvic_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_pelvic_cavity.value.toLowerCase() === pic_13_pelvic_cavity_ans_content) {
+                                            yes_pic_13_pelvic_cavity.style.display = 'unset';
+                                            no_pic_13_pelvic_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_pelvic_cavity.style.display = 'none';
+                                            no_pic_13_pelvic_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_pelvic_cavity.addEventListener('click', e=>{
+                                        input_pic_13_pelvic_cavity.value = '';
+                                        yes_pic_13_pelvic_cavity.style.display = 'none';
+                                        no_pic_13_pelvic_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--12.pelvic_cavity-->
+
+                            <div><!--13.abdomino_palvic_cavity-->
+                                <style>
+                                    #yes-pic-13-abdomino_palvic_cavity { display: none; }
+                                    #no-pic-13-abdomino_palvic_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-abdomino_palvic_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-abdomino_palvic_cavity">✖ </label>
+                                <label>13 : </label>
+                                <input type="text" id="pic-13-abdomino_palvic_cavity">
+                                <button id="clear-pic-13-abdomino_palvic_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_abdomino_palvic_cavity = document.getElementById('pic-13-abdomino_palvic_cavity');
+                                    let yes_pic_13_abdomino_palvic_cavity = document.getElementById('yes-pic-13-abdomino_palvic_cavity');
+                                    let no_pic_13_abdomino_palvic_cavity = document.getElementById('no-pic-13-abdomino_palvic_cavity');
+                                    let clear_pic_13_abdomino_palvic_cavity = document.getElementById('clear-pic-13-abdomino_palvic_cavity');
+                                    let pic_13_abdomino_palvic_cavity_ans_content = "abdominopelvic cavity";
+                                    input_pic_13_abdomino_palvic_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_abdomino_palvic_cavity.value.toLowerCase() === pic_13_abdomino_palvic_cavity_ans_content) {
+                                            yes_pic_13_abdomino_palvic_cavity.style.display = 'unset';
+                                            no_pic_13_abdomino_palvic_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_abdomino_palvic_cavity.style.display = 'none';
+                                            no_pic_13_abdomino_palvic_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_abdomino_palvic_cavity.addEventListener('click', e=>{
+                                        input_pic_13_abdomino_palvic_cavity.value = '';
+                                        yes_pic_13_abdomino_palvic_cavity.style.display = 'none';
+                                        no_pic_13_abdomino_palvic_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--13.abdomino_palvic_cavity-->
+
+                            <div><!--14.ventral_body_cavity-->
+                                <style>
+                                    #yes-pic-13-ventral_body_cavity { display: none; }
+                                    #no-pic-13-ventral_body_cavity { display: none; }
+                                </style>
+                                
+                                <label class="yes" id="yes-pic-13-ventral_body_cavity">✔ </label>
+                                <label class="no" id="no-pic-13-ventral_body_cavity">✖ </label>
+                                <label>14 : </label>
+                                <input type="text" id="pic-13-ventral_body_cavity">
+                                <button id="clear-pic-13-ventral_body_cavity">清除</button>
+                                <script>
+                                    let input_pic_13_ventral_body_cavity = document.getElementById('pic-13-ventral_body_cavity');
+                                    let yes_pic_13_ventral_body_cavity = document.getElementById('yes-pic-13-ventral_body_cavity');
+                                    let no_pic_13_ventral_body_cavity = document.getElementById('no-pic-13-ventral_body_cavity');
+                                    let clear_pic_13_ventral_body_cavity = document.getElementById('clear-pic-13-ventral_body_cavity');
+                                    let pic_13_ventral_body_cavity_ans_content = "ventral body cavity(thoracic and abdominopelvic cavities)";
+                                    input_pic_13_ventral_body_cavity.addEventListener("change", e=>{
+                                        if(input_pic_13_ventral_body_cavity.value.toLowerCase() === pic_13_ventral_body_cavity_ans_content) {
+                                            yes_pic_13_ventral_body_cavity.style.display = 'unset';
+                                            no_pic_13_ventral_body_cavity.style.display = 'none';
+                                        }else {
+                                            yes_pic_13_ventral_body_cavity.style.display = 'none';
+                                            no_pic_13_ventral_body_cavity.style.display = 'unset';
+                                        }
+                                    });
+                                    clear_pic_13_ventral_body_cavity.addEventListener('click', e=>{
+                                        input_pic_13_ventral_body_cavity.value = '';
+                                        yes_pic_13_ventral_body_cavity.style.display = 'none';
+                                        no_pic_13_ventral_body_cavity.style.display = 'none';
+                                    });
+                                </script>
+                            </div><!--14.ventral_body_cavity-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--圖片題13--><!--體腔-->
+
             <script>
                 let questions = document.getElementsByClassName('question');
                 for(let i = 0; i < questions.length; i++) {
